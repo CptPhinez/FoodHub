@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Components.Authorization;
+﻿using FoodHub.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace FoodHub.Authentication
+namespace FoodHub.Models
 {
     public class CustomAuthenticationStateProvider : AuthenticationStateProvider
     {

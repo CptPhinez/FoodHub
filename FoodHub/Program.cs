@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using FoodHub.Authentication;
+using FoodHub.Services;
+using FoodHub.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
