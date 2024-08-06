@@ -1,0 +1,61 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #FFE0B5;
+}
+
+
+/* Adjustments for very small screens (mobile-first) */
+@media (max-width: 576px) {
+
+}
+
+/* Adjustments for small screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+/* Adjustments for medium screens (small desktops) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Adjustments for large screens (large desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Adjustments for extra large screens (very large desktops) */
+@media (min-width: 1201px) {
+
+}

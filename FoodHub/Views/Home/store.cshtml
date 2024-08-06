@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FoodHub</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/FoodHub.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Food Hub</h1>
+        <p>Select your favorite foods from our menu and place your order!</p>
+    </div>
+
+    <div class="container">
+        <h2 class="my-4">Foods</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/food1.jpg" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 1</h5>
+                        <p class="card-text">Description of Food Item 1.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 1', 'Description of Food Item 1', '$10.00', '~/images/food1.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick=" location.href='@Url.Action("Order", "Home")'">Order</button>
+                            </div>
+                            <small class="text-muted">$10.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/food2.jpg" alt="Food 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 2</h5>
+                        <p class="card-text">Description of Food Item 2.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 2', 'Description of Food Item 2', '$12.00', '~/images/food2.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$12.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/food3.jpg" alt="Food 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 3</h5>
+                        <p class="card-text">Description of Food Item 3.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 3', 'Description of Food Item 3', '$11.00', '~/images/food3.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$11.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/food4.jpg" alt="Food 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 4</h5>
+                        <p class="card-text">Description of Food Item 4.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 4', 'Description of Food Item 4', '$13.00', '~/images/food4.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$13.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="~/images/food5.jpg" alt="Food 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 5</h5>
+                        <p class="card-text">Description of Food Item 5.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 5', 'Description of Food Item 5', '$14.00', '~/images/food5.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$14.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/food6.jpg" alt="Food 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Item 6</h5>
+                        <p class="card-text">Description of Food Item 6.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Food Item 6', 'Description of Food Item 6', '$15.00', '~/images/food6.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$15.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="my-4">Beverages</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage1.jpg" alt="Beverage 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 1</h5>
+                        <p class="card-text">Description of Beverage Item 1.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 1', 'Description of Beverage Item 1', '$5.00', '~/images/beverage1.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$5.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage2.jpg" alt="Beverage 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 2</h5>
+                        <p class="card-text">Description of Beverage Item 2.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 2', 'Description of Beverage Item 2', '$6.00', '~/images/beverage2.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$6.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage3.jpg" alt="Beverage 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 3</h5>
+                        <p class="card-text">Description of Beverage Item 3.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 3', 'Description of Beverage Item 3', '$5.50', '~/images/beverage3.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$5.50</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage4.jpg" alt="Beverage 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 4</h5>
+                        <p class="card-text">Description of Beverage Item 4.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 4', 'Description of Beverage Item 4', '$7.00', '~/images/beverage4.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$7.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage5.jpg" alt="Beverage 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 5</h5>
+                        <p class="card-text">Description of Beverage Item 5.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 5', 'Description of Beverage Item 5', '$6.50', '~/images/beverage5.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$6.50</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/beverage6.jpg" alt="Beverage 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Beverage Item 6</h5>
+                        <p class="card-text">Description of Beverage Item 6.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Beverage Item 6', 'Description of Beverage Item 6', '$7.50', '~/images/beverage6.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$7.50</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="my-4">Desserts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert1.jpg" alt="Dessert 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 1</h5>
+                        <p class="card-text">Description of Dessert Item 1.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 1', 'Description of Dessert Item 1', '$7.00', '~/images/dessert1.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$7.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert2.jpg" alt="Dessert 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 2</h5>
+                        <p class="card-text">Description of Dessert Item 2.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 2', 'Description of Dessert Item 2', '$8.00', '~/images/dessert2.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$8.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert3.jpg" alt="Dessert 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 3</h5>
+                        <p class="card-text">Description of Dessert Item 3.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 3', 'Description of Dessert Item 3', '$7.50', '~/images/dessert3.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$7.50</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert4.jpg" alt="Dessert 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 4</h5>
+                        <p class="card-text">Description of Dessert Item 4.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 4', 'Description of Dessert Item 4', '$8.50', '~/images/dessert4.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$8.50</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert5.jpg" alt="Dessert 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 5</h5>
+                        <p class="card-text">Description of Dessert Item 5.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 5', 'Description of Dessert Item 5', '$9.00', '~/images/dessert5.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$9.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/images/dessert6.jpg" alt="Dessert 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Dessert Item 6</h5>
+                        <p class="card-text">Description of Dessert Item 6.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#viewModal"
+                                        onclick="showDishDetails('Dessert Item 6', 'Description of Dessert Item 6', '$10.00', '~/images/dessert6.jpg')">
+                                    View
+                                </button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Order</button>
+                            </div>
+                            <small class="text-muted">$10.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Modal Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Dish Image" class="img-fluid">
+                    <p id="modalDescription"></p>
+                    <p><strong>Price: <span id="modalPrice"></span></strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        function showDishDetails(title, description, price, imageUrl) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('modalPrice').innerText = price;
+            document.getElementById('modalImage').src = imageUrl;
+        }
+    </script>
+
+</body>
+</html>

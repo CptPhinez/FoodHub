@@ -1,0 +1,40 @@
+﻿@page
+@model SignupModel
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.JSInterop
+@{
+	ViewData["Title"] = "Signup";
+}
+<div class="row justify-content-center align-items-center vh-100">
+	<div class="col-lg-4 p-4 border rounded shadow-sm">
+		<div class="mb-4 text-center">
+			<img src="~/css/login.png" alt="Freshdesk Logo" class="signup-logo mb-4">
+			<h3><b>Signup</b></h3>
+		</div>
+		<!-- Username input group with icon -->
+		<div class="mb-3 input-group">
+			<span class="input-group-text">
+				<i class="oi oi-person"></i>
+			</span>
+			<input asp-for="Model.UserName" class="form-control" placeholder="Username" />
+		</div>
+		<!-- Password input group with icon -->
+		<div class="mb-3 input-group">
+			<span class="input-group-text">
+				<i class="oi oi-lock-locked"></i>
+			</span>
+			<input asp-for="Model.Password" type="password" class="form-control" placeholder="Password" />
+		</div>
+		<!-- Confirm Password input group with icon -->
+		<div class="mb-3 input-group">
+			<span class="input-group-text">
+				<i class="oi oi-lock-locked"></i>
+			</span>
+			<input asp-for="Model.ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" />
+		</div>
+		<div class="mb-3 d-grid gap-2">
+			<button type="submit" class="btn btn-primary">Signup</button>
+		</div>
+	</div>
+</div>

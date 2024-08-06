@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FoodHub</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/FoodHub.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Food Hub</h1>
+        <p>Select your favorite foods from our menu and place your order!</p>
+    </div>
+
+    <div class="container">
+        <h2 class="my-4">Stores</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4" id="card1">
+                    <img class="card-img-top" src="https://www.10interestingfacts.com/wp-content/uploads/2017/09/image-57.jpg" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">JALubot</h5>
+                        <p class="card-text">Description of what is in the strore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4">
+                <div class="card mb-4" id="card2">
+                    <img class="card-img-top" src="https://www.gannett-cdn.com/media/USATODAY/WiresImages/2012/10/11/820fbb8bab63a41c1d0f6a70670052a9-16_9.jpg?width=3200&height=1680&fit=crop" alt="Food 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Wenday</h5>
+                                <p class="card-text">Description of what is in the strore.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="col-md-4">
+                <div class="card mb-4" id="card3">
+                    <img class="card-img-top" src="https://speakmatters.files.wordpress.com/2013/10/mcdo.jpg" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">McDick</h5>
+                        <p class="card-text">Description of what is in the strore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4" id="card4">
+                    <img class="card-img-top" src="https://1000logos.net/wp-content/uploads/2018/01/chick-fil-emblem.jpg" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chick Bilat</h5>
+                        <p class="card-text">Description of what is in the strore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4" id="card5">
+                    <img class="card-img-top" src="https://logonoid.com/images/greenwich-logo.png" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">GreenBitch</h5>
+                        <p class="card-text">Description of what is in the strore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4" id="card6">
+                    <img class="card-img-top" src="http://akashkaushal.files.wordpress.com/2012/03/logo-starbucks.jpeg" alt="Food 1">
+                    <div class="card-body">
+                        <h5 class="card-title">StarSucks</h5>
+                        <p class="card-text">Description of what is in the strore.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    document.getElementById('card1').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store", "Home")';
+                    });
+
+                    document.getElementById('card2').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store2", "Home")';
+                    });
+                    document.getElementById('card3').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store", "Home")';
+                    });
+                    document.getElementById('card4').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store", "Home")';
+                    });
+                    document.getElementById('card5').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store", "Home")';
+                    });
+                    document.getElementById('card6').addEventListener('click', function () {
+                        window.location.href = '@Url.Action("store", "Home")';
+                    });
+                });
+        
+    </script>
+
+</body>
+</html>

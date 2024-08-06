@@ -1,0 +1,152 @@
+﻿.btn-outline-secondary:focus,
+.btn-outline-secondary:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.modal-footer .btn-primary:focus,
+.modal-footer .btn-primary:active {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .dropdown-menu .dropdown-item:focus {
+        background-color: #000;
+        color: #fff;
+    }
+
+.category {
+    display: none;
+}
+
+    .category.show {
+        display: block;
+    }
+
+.navbar-brand {
+    pointer-events: none;
+    cursor: default;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    .footer .container {
+        margin-bottom: 10px;
+    }
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+        color: #007bff;
+    }
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #FFF2D7;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+.login-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.input-group-text {
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    border: 1px solid #ced4da; /* Adjust border color as needed */
+    border-radius: 4px 0 0 4px; /* Round the left side of the border */
+}
+
+.form-control {
+    border-radius: 0 4px 4px 0; /* Round the right side of the border */
+}
+
+    .form-control:focus {
+        border-color: green;
+        box-shadow: 0 0 5px green;
+    }
+
+.input-group-text i {
+    color: #6c757d; /* Adjust icon color as needed */
+}
+
+.btn {
+    border-radius: 4px; /* Round the button corners */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.signup-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+.signup-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.input-group-text {
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    border: 1px solid #ced4da; /* Adjust border color as needed */
+    border-radius: 4px 0 0 4px; /* Round the left side of the border */
+}
+
+.form-control {
+    border-radius: 0 4px 4px 0; /* Round the right side of the border */
+}
+
+    .form-control:focus {
+        border-color: green;
+        box-shadow: 0 0 5px green;
+    }
+
+.input-group-text i {
+    color: #6c757d; /* Adjust icon color as needed */
+}
+
+.btn {
+    border-radius: 4px; /* Round the button corners */
+    padding: 10px; /* Adjust padding as needed */
+}
