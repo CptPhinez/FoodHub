@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.JSInterop;
-using Freshdesk.Authentication;
+using FoodHub.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components;
-using FoodHub.Authentication;
 public class LoginModel : PageModel
 {
 	private readonly UserAccountService _userAccountService;
